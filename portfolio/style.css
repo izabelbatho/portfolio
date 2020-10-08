@@ -1,0 +1,92 @@
+h1{
+  background-image: url(img/plante4.jpg);
+  text-align: center;
+  font-size: 100px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  color: black;
+  text-shadow: 2px 2px 4px #ffffff;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+p {
+  margin: 30px;
+}
+a, h1, h2, p, h3, h4 {
+  font-family:Roboto, sans-serif, helvetica;
+}
+.arbejde{
+  font-size: 20px;
+
+}
+h2{
+  text-align: center;
+  font-size: 50px;
+  background-color: #333;
+  color:white;
+}
+h3{
+  font-size: 30px;
+  background-color: #333;
+  color: white;
+}
+h4{
+  font-size: 20px;
+  background-color: #333;
+  color: white;
+}
+p{
+  font-size: 20px;
+}
+
+
+* {
+box-sizing: border-box;
+}
+
+.column {
+float: left;
+width: 33.33%;
+padding: 5px;
+}
+
+.row::after {
+content: "";
+clear: both;
+display: table;
+}
+.column2 {
+float: left;
+width: 33.33%;
+padding: 5px;
+}
+
+.row2::after {
+content: "";
+clear: both;
+display: table;
+}
