@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Highground by Iza</title>
+  <link rel="shortcut icon" href="img/ikon.jpg"/>
+    <link rel="stylesheet" href="css/style.css">
+    <style media="screen">
+    .logo{
+      float: right;
+    }
+    h1{
+      text-align: center;
+      margin-left: 15%;
+    }
+    * {
+    box-sizing: border-box;
+    }
+
+    .container {
+    float: left;
+    width: 50%;
+    padding: 5px;
+    }
+
+    .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+    .container {
+      position: relative;
+      width: 50%;
+    }
+    h2{
+      text-align: center;
+    }
+    ul{
+      font-size: 20px;
+    }
+    .column3 {
+float: left;
+width: 33.33%;
+padding: 5px;
+}
+
+.row3::after {
+content: "";
+clear: both;
+display: table;
+}
+.column2 {
+float: left;
+width: 33.33%;
+padding: 5px;
+}
+
+.row2::after {
+content: "";
+clear: both;
+display: table;
+}
+    </style>
+  </head>
+  <body>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="index.html">HJEM</a>
+        <a href="om.html">OM</a>
+        <a href="projekter.html">PROJEKTER</a>
+        <a href="cv.html">CV</a>
+        <a href="kontakt.html">KONTAKT</a>
+      </div>
+    </div>
+    <div class="logo">
+      <a href="index.html">
+    <img src="img/logo2.jpg" alt="logo" height="100px">
+    </a>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+    <script>
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+    </script>
+    <h1>HVEM ER JEG?</h1>
+    <div class="row">
+      <div class="container">
+<h3></h3>
+<img src="img/om.jpg" alt="Izabel Batho" height="600">
+      </div>
+      <div class="container">
+<h2>Izabel Lavigné Ussing Bathò</h2>
+<p>Jeg er en 21-årig multimediedesign-studerende med interesse for design, optimering og fotografi. Jeg elsker det visuelle design, men samtidig finder jeg kodning utrolig spændende. Min erfaring er begrænset, da jeg ikke har haft nogen forhåndsviden til det præsenterede pensum, men indtil videre har jeg erfaring med følgende.</p>
+<ul>
+  <li>Photoshop</li>
+  <li>Illustrator</li>
+  <li>Adobe XD</li>
+  <li>HTML og CSS</li>
+  <li>Premiere Pro</li>
+</ul>
+<p>I min fritid tager jeg billeder af mine omgivelser, som du kan se herunder.</p>
+      </div>
+    </div>
+    <div class="row3">
+        <div class="column3">
+          <img src="img/rom.jpeg" alt="rom" style="width:100%">
+        </div>
+        <div class="column3">
+          <img src="img/tiki.jpeg" alt="corgi" style="width:100%">
+        </div>
+        <div class="column3">
+          <img src="img/vand.jpeg" alt="rom" style="width:100%">
+        </div>
+      </div>
+
+      <div class="row3">
+        <div class="column3">
+          <img src="img/seb.jpeg" alt="altan" style="width:100%">
+        </div>
+        <div class="column3">
+          <img src="img/jan.jpeg" alt="Jan Grarup" style="width:100%">
+        </div>
+        <div class="column3">
+          <img src="img/fly.jpeg" alt="fly" style="width:100%">
+        </div>
+      </div>
+
+      <div class="row3">
+        <div class="column3">
+          <img src="img/colo.jpeg" alt="colosseum" style="width:100%">
+        </div>
+        <div class="column3">
+          <img src="img/gade.jpeg" alt="gade i rom" style="width:100%">
+        </div>
+        <div class="column3">
+          <img src="img/vej.jpeg" alt="bil" style="width:100%">
+        </div>
+      </div>
+
+      <div class="row3">
+        <div class="column3">
+          <img src="img/vand.jpeg" alt="" style="width:100%">
+        </div>
+        <div class="column3">
+          <img src="img/udsigt.jpeg" alt="" style="width:100%">
+        </div>
+        <div class="column3">
+          <img src="img/tik.jpeg" alt="" style="width:100%">
+        </div>
+      </div>
+
+      <div class="row2">
+        <div class="column2">
+          <img src="img/sky.jpeg" alt="hej" style="width:100%">
+        </div>
+        <div class="column2">
+          <img src="img/zara.jpg" alt="2" style="width:100%">
+        </div>
+        <div class="column2">
+          <img src="img/statue.jpeg" alt="3" style="width:100%">
+        </div>
+      </div>
+    <footer><p>©2020 | Izabel Bathò | ™Highground by Iza</p></footer>
+
+  </body>
+</html>

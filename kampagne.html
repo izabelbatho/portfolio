@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Highground by Iza</title>
+  <link rel="shortcut icon" href="img/ikon.jpg" />
+  <link rel="stylesheet" href="css/style.css">
+  <style media="screen">
+    .logo {
+      float: right;
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .container {
+      float: left;
+      width: 50%;
+      padding: 5px;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .container {
+      position: relative;
+      width: 50%;
+    }
+
+    .img {
+      border: solid 2px;
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .overlay1 {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .container:hover .overlay1 {
+      opacity: 1;
+    }
+
+    .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .download {
+      margin-top: 5%;
+      margin-left: 60%;
+    }
+
+    .skrift {
+      margin-top: 40%;
+    }
+
+    .back {
+      margin-top: 2%;
+    }
+.overskrift{
+  margin-right:30%;
+}
+  </style>
+</head>
+
+<body>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="index.html">HJEM</a>
+      <a href="om.html">OM</a>
+      <a href="projekter.html">PROJEKTER</a>
+      <a href="cv.html">CV</a>
+      <a href="kontakt.html">KONTAKT</a>
+    </div>
+  </div>
+  <div class="logo">
+    <a href="index.html">
+      <img src="img/logo2.jpg" alt="logo" height="100px">
+    </a>
+  </div>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+  </script>
+  <div class="back">
+    <a href="projekter.html">
+      <img src="img/back.jpg" height="30px" alt="tilbage knap">
+    </a>
+  </div>
+  <h1>Verdensmålskampagne</h1>
+  <div class="row">
+    <div class="container">
+      <h2>Opgavebeskrivelse</h2>
+      <p>Flow 4 bestod af at lave en kampagne for en af Lyngby storcenters butikker, der havde indkoopereret ét af FN's verdensmål. Der skulle laves en landingpage til kampagnen samt en video. Vi skulle også kreere et logo i Adobe Illustrator til
+        kampagnen. Dette flow var også en gruppeopgave, hvor vi selv skulle lave grupper. Klik på billedet til højre for at udforske den første landingpage.</p>
+        <h2>Remake</h2>
+        <p>Jeg har valgt selvstændigt at lave et remake på landingpagen samt den kampagneplakat vi lavede i Adobe Illustrator. Klik <a href="landingpage.html" target="_blank">her</a> for at udforske resultatet</p>
+        <h2>Reflektion</h2>
+        <p>Efter hvert flow har jeg lavet en reflektion over projektet, da det er vigtigt at refkletere over hvad man har lært.</p>
+        <h3>Hvad har jeg lært under forløbet?</h3>
+        <p>Jeg har lært at arbejde i Premiere Pro, hvor videoen blev redigeret. Derudover har jeg lært at arbejde i Adobe Illustrator og har fået kendskab til begrebet Style Guide</p>
+        <h3>Hvordan hænger det sammen med mit forhåndskendskab til emnet og denne opgavetype?</h3>
+        <p>Det eneste jeg havde prøvet før, var kodning i HTML, som blev brugt til landingpagen. Det var første gang jeg arbejdede i Premiere Pro og Adobe Illustrator.</p>
+        <h3>Hvad forventede jeg at lære?</h3>
+        <p>Jeg forventede at lære de to programmer at kende og at få opfrisket kodningen.</p>
+        <h3>Hvad har jeg mere brug for at lære?</h3>
+        <p>Det var en meget kort fornøjelse i begge programmer, selvom det var mig der klippede videoen sammen. Jeg kunne helt sikkert godt tænkte mig at få Premiere Pro ind under neglene på et senere tidspunkt, hvis vi skal lave et projekt, hvor vi skal bruge programmet.</p>
+        <h3>Hvad vil jeg foretage mig for at lære dette?</h3>
+        <p>Prøve at gå mere i dybden og udforske flere videoer på enten LinkedIn Learning eller Youtube, når vi skal lave et projekt igen.</p>
+    </div>
+    <div class="container">
+      <img src="img/kampagne.jpg" alt="kampagne" height="300px" ; width=100%>
+      <div class="overlay1">
+        <a href="http://danielsilva.dk/landingpage/" target="_blank">
+          <div class="text">Verdensmålskampagne</div>
+        </a>
+      </div>
+  </div>
+      <a href="file/kampagne.pdf" download="kampagnerapport" target="_blank">
+        <div class="download">
+          <img src="img/down.jpg" alt="download"
+        </div>
+      </a>
+<h2 class=overskrift>Klik på ikonet for at downloade rapporten til kampagnen.</h2>
+  </div>
+  <footer><p>©2020 | Izabel Bathò | ™Highground by Iza</p></footer>
+
+</body>
+
+</html>

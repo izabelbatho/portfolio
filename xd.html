@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+
+  <title>Highground by Iza</title>
+<link rel="shortcut icon" href="img/ikon.jpg"/>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<style media="screen">
+  h1,
+  h2 {
+    text-align: center;
+  }
+
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .container {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .container {
+    position: relative;
+    width: 50%;
+  }
+
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .overlay1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .container:hover .overlay1 {
+    opacity: 1;
+  }
+
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+  .logo{
+    float: right;
+  }
+.download{
+  margin-left: 60%;
+  margin-top: 40%
+}
+.back{
+  margin-top: 2%;
+}
+</style>
+
+<body>
+
+
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="index.html">HJEM</a>
+      <a href="om.html">OM</a>
+      <a href="projekter.html">PROJEKTER</a>
+      <a href="cv.html">CV</a>
+      <a href="kontakt.html">KONTAKT</a>
+    </div>
+  </div>
+  <div class="logo">
+    <a href="index.html">
+  <img src="img/logo2.jpg" alt="logo" height="100px">
+  </a>
+  </div>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+  </script>
+  <div class="back">
+    <a href="projekter.html">
+      <img src="img/back.jpg" height="30px" alt="tilbage knap">
+    </a>
+  <h1>Byg din drømme portfolio</h1>
+  <div class="row">
+
+
+    <div class="container">
+      <h2>Opgave beskrivelse</h2>
+      <p>Flow 1 bestod af at bygge et drømme portfolio i Adobe XD. Et portfolio er et professionelt værktøj til at vise til en kommende arbejdsgiver. Målgruppen jeg valgte var derfor en potentiel arbejdsgiver. Et portfolio er med til at vise
+        tidligere
+        projekter, ens kompetencer og yderligere hvem man er. Klik på billedet til højre for at se resultatet</p>
+      <h2>Remake</h2>
+      <p>Udviklingen af mit portfolio har automatisk været igangværende, da flow 2 indebar at producere et portfolio ved hjælp af HTML og CSS. Flow 2 er derfor den optimerede udgave af mit første portfolio.</p>
+      <h2>Reflektion</h2>
+      <p>Efter hvert flow har jeg lavet en reflektion over projektet, da det er vigtigt at refkletere over hvad man har lært.</p>
+      <h3>Hvad har jeg lært under forløbet?</h3>
+      <p>Jeg har lært om Photoshop og Adobe XD. Derudover har jeg lært om basale designprincipper.</p>
+      <h3>Hvordan hænger det sammen med mit forhåndskendskab til emnet og denne opgavetype?</h3>
+      <p>Jeg havde intet kendskab til de to programmer, så det var helt nyt for mig at arbejde i dem.</p>
+      <h3>Hvad forventede jeg at lære?</h3>
+      <p>Jeg forventede at lære omkring designprincipper og hvordan man designer en flot hjemmeside.</p>
+      <h3>Hvad har jeg mere brug for at lære?</h3>
+      <p>Undervisningen i XD og Photoshop var helt udemærket, men det tager noget tid før det sidder under neglene. Derfor ønsker jeg helt klart noget rutine i programmerne, som jeg tænker kommer fremadrettet på de forskellige semestre.</p>
+      <h3>Hvad vil jeg foretage mig for at lære dette?</h3>
+      <p>Jeg tænker det kommer hen af vejen, jo mere jeg arbejder i programmerne, jo hurtigere bliver jeg rutineret i dem.</p>
+    </div>
+    <h2>XD portfolio</h2>
+    <div class="container">
+
+      <img src="img/portfolio.jpg" alt="xd" width="100%">
+      <div class="overlay1">
+        <a href="https://xd.adobe.com/view/b242f345-8810-4c73-8619-4feecf3df995-e711/" target="_blank">
+          <div class="text">Byg din drømme portfolio</div>
+        </a>
+      </div>
+    </div>
+    <a href="file/portfolioflow.pdf" download="portfoliorapport" target="_blank">
+      <div class="download">
+        <img src="img/down.jpg" alt="download">
+      </div>
+    </a>
+    <h2>Klik på ikonet for at downloade rapporten på mit portfolio.</h2>
+    </div>
+
+  </div>
+  <footer><p>©2020 | Izabel Bathò | ™Highground by Iza</p></footer>
+
+</body>
+
+</html>

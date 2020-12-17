@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Highground by Iza</title>
+<link rel="shortcut icon" href="img/ikon.jpg"/>
+  <link rel="stylesheet" href="css/style.css">
+  <style media="screen">
+    .logo {
+      float: right;
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .container {
+      float: left;
+      width: 50%;
+      padding: 5px;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .container {
+      position: relative;
+      width: 50%;
+    }
+
+    .img {
+      border: solid 2px;
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .overlay1 {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .container:hover .overlay1 {
+      opacity: 1;
+    }
+
+    .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .download {
+      margin-top: 5%;
+      margin-left: 60%;
+    }
+
+    .skrift {
+      margin-top: 40%;
+    }
+
+    .back {
+      margin-top: 2%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="index.html">HJEM</a>
+      <a href="om.html">OM</a>
+      <a href="projekter.html">PROJEKTER</a>
+      <a href="cv.html">CV</a>
+      <a href="kontakt.html">KONTAKT</a>
+    </div>
+  </div>
+  <div class="logo">
+    <a href="index.html">
+      <img src="img/logo2.jpg" alt="logo" height="100px">
+    </a>
+  </div>
+
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+  </script>
+  <div class="back">
+    <a href="projekter.html">
+      <img src="img/back.jpg" height="30px" alt="tilbage knap">
+    </a>
+  </div>
+  <h1>Byg din portfolio</h1>
+  <div class="row">
+    <div class="container">
+      <h2>Opgavebeskrivelse</h2>
+      <p>Opgaven bestod i at vi skulle kode vores drømmeportfolio, ligge den online og dokumentere vores kode og projekt struktur på Github. Ydermere skulle vi også lave en fejlfri kode, altså få den valideret. Vi skulle også have målgruppen i
+        tankerne og stille os selv spørgmålene:</p>
+      <ul>
+        <li>Hvem skal se min portfolio - hvem henvender jeg mig til?</li>
+        <li>Hvordan præsenterer jeg bedst mig selv?</li>
+        <li>Hvordan formidler jeg, hvad jeg har lært indtil nu og hvad jeg håber på at lære fremover?</li>
+        <li>Hvilken visuel stil og stemning ønsker jeg på min portfolio?</li>
+        <li>Hvordan kan jeg give min portfolio et personligt touch?</li>
+      </ul>
+      <p>Portfolio opgaven er vigtig fordi den følger os igennem hele vores studietid og er et vigtigt redskab til at præsentere vores kompetencer til fremtidige arbejdsgiver, samt en mulighed for vores undervisere at følge med i vores læring. Klik
+        på billedet til højre for at se min første portfolio.</p>
+        <h2>Remake</h2>
+        <p>Udviklingen af dette portfolio, er hele denne side du udforsker nu. Det portfolio du udforsker nu, er opgaven i flow 5. </p>
+      <h2>Reflektion</h2>
+      <p>Efter hvert flow har jeg lavet en reflektion over projektet, da det er vigtigt at refkletere over hvad man har lært.</p>
+      <h3>Hvad har jeg lært under forløbet?</h3>
+      <p>Jeg har lært at arbejde med HTML og CSS på egen hånd, hvor jeg har gjort brug af det udbytte jeg har fået ud af undervisningen. Derudover har jeg fået kendskab til Github.</p>
+      <h3>Hvordan hænger det sammen med mit forhåndskendskab til emnet og denne opgavetype?</h3>
+      <p>Jeg havde aldrig prøvet at kode før, men synes selv jeg var meget hurtig til at fange grundprincipperne og finde mere information på egen hånd.</p>
+      <h3>Hvad forventede jeg at lære?</h3>
+      <p>Jeg forventede at lære mere om kodning og blive bedre til det selv. Den forventning erhelt klart opnået.</p>
+      <h3>Hvad har jeg mere brug for at lære?</h3>
+      <p>Jeg synes jeg har lært alle grundstenene. Jeg brugte ikke javascript i dette flow, men synes helt klart det havde været sjovt at have lært det, så det kunne komme med. Personligt synes jeg at der var plads til at lære om javascript</p>
+      <h3>Hvad vil jeg foretage mig for at lære dette?</h3>
+      <p>Umiddelbart sidde og nørkle med det selv i min fritid. Det er ikke noget der er nødvendigt for 1. semester, men jeg synes stadig det er meget spændende at sidde med selv, og så har man et lille fordel, når man kommer til det i
+        undervisningen.</p>
+
+    </div>
+    <h2>Portfolio</h2>
+    <div class="container">
+
+      <div class="img">
+        <img src="img/portfolio2.jpg" alt="portfolio" height="300px" width="100%">
+        <div class="overlay1">
+          <a href="http://highgroundbyiza.dk/portfolio-flow1/index.html" target="_blank">
+            <div class="text">Byg din portfolio</div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <div class="skrift">
+      <h2>Klik på ikonet for at udforske koden til mit første portfolio</h2>
+    </div>
+    <a href="https://github.com/izabelbatho/portfolio" target="_blank">
+      <div class="download">
+        <img src="img/github.png" alt="github">
+      </div>
+    </a>
+  </div>
+</body>
+<footer><p>©2020 | Izabel Bathò | ™Highground by Iza</p></footer>
+
+</html>

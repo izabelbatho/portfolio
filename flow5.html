@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Highground by Iza</title>
+  <link rel="shortcut icon" href="img/ikon.jpg" />
+  <link rel="stylesheet" href="css/style.css">
+  <style media="screen">
+    .logo {
+      float: right;
+    }
+
+    h1 {
+      margin-left: 12%;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .container {
+      float: left;
+      width: 50%;
+      padding: 5px;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .container {
+      position: relative;
+      width: 50%;
+    }
+
+    .overlay1 {
+      position: absolute;
+      top: 69%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 30%;
+      width: 50%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .container:hover .overlay1 {
+      opacity: 1;
+    }
+
+    .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .gantt {
+      width: 50%;
+      float: right;
+
+    }
+
+    .overlay2 {
+      position: absolute;
+      /*top: 500;
+      bottom: 0;
+      left: 0;
+      right: 0;*/
+      height: 50%;
+      width: 72.5%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: rgba(0, 0, 0, 0.8);
+      margin-top: -24%;
+
+    }
+
+    .gantt:hover .overlay2 {
+      opacity: 1;
+      width: 50%;
+    }
+    .font{
+      float: right;
+      width: 50%;
+    }
+h2{
+  padding-top: 5%;
+}
+  </style>
+</head>
+
+<body>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="index.html">HJEM</a>
+      <a href="om.html">OM</a>
+      <a href="projekter.html">PROJEKTER</a>
+      <a href="cv.html">CV</a>
+      <a href="kontakt.html">KONTAKT</a>
+    </div>
+  </div>
+  <div class="logo">
+    <a href="index.html">
+      <img src="img/logo2.jpg" alt="logo" height="100px">
+    </a>
+  </div>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+  </script>
+  <div class="back">
+    <a href="projekter.html">
+      <img src="img/back.jpg" height="30px" alt="tilbage knap">
+    </a>
+    <h1>Flow 5</h1>
+    <div class="row">
+      <div class="container">
+        <h2>Opgavebeskrivelse</h2>
+        <p>Opgaven bestod i at vi skulle lave et komplet redesign af vores portfolioer og opdatere alle tidligere projekter, samt dokumentere udviklingen.
+          På denne side kan du se udviklingsprocessen af min portfolio.</p>
+        <h2>PBS</h2>
+        <p>Før man kan gå igang med et projekt er det vigtigt at vide hvad der skal laves og hvor lang tid det tager.En PBS (Product breakdown structure) er en nedbrydelse af alle de dele som det færdige produkt består af. Du kan se denne hjemmesides
+          PBS på billedet til højre.</p>
+        <h2>WBS</h2>
+        <p>WBS (Work Breakdown Structure) er et skema over alle de opgaver der skal ordnes for at produktet kan blive færdigt. Samtidig er det også et billede af, hvor meget tid hver opgave kræver. Det er vigtigt at have overblik over alle opgaver,
+          hvilke opgaver der er tidskrævende og hvilke småting der skal ordnes.</p>
+        <h2>Wireframes</h2>
+        <p>Inden man begynder at kode en hjemmeside, er det en god ide at lave wireframes, så man har en ide om, hvilen struktur hjemmesiden skal have. Klik på billedet til højre for at udforske mine wireframes.</p>
+        <h2>Indhold og struktur</h2>
+        <p>Jeg har valgt at holde mig til en simpel og minimalistisk stil, for at holde et stramt udseende uden forstyrrelser. Jeg har valgt denne stil, for at fremtræde professionel overfor en potentiel arbejdsgiver, som min målgruppe er. Jeg har
+          holdt mig til to kolonner på alle sider, for at holde den røde tråd mellem undersiderne. Forsiden består af mit logo, lidt information om siden samt et billede af mig selv, for at skabe en indbydende og informativ forside, hvor man får
+          relevante oplysningerså man ikke er tvivl om, at siden er et portfolio lavet af mig.</p>
+        <h2>Gantt diagram</h2>
+        <p>Et Gantt diagram er et vigtigt værktøj under projektledelse, for at få overblik over opgavernes tid samt den samlede tidsplan. I Gantt diagrammet kan man uddeligere opgaverne og sætte en deadline. Klik på billedet til højre for at udforske mit Gantt diagram.</p>
+        <h2>Typografi</h2>
+        <p>Det er vigtigt at tænke over, hvilken skrifttype man bruger, specielt til en hjemmeside, da det skal være letlæseligt for brugeren. Derfor har jeg valgt Helvetica, da den er letlæselig på en skærm. Generelt er sans-serif skrifttyper de bedste at bruge, da de er de nemmeste skrifttyper at læse på en skærm. Helvetica er en sans-serif og er installeret på 100% af mac brugeres computere. Jeg har sat den alternative skrifttype til at være en sans-serif, hvis brugeren nu ikke havde skrifttypen installeret. Skrifttypen ses på billedet til højre.</p>
+        <h2>Logo</h2>
+        <p>Da jeg skulle generere et logo til siden, startede jeg først med at bruge mine initialer "IB". Jeg prøvede mig frem med forskellige skrifttyper og omrids, men blev ikke selv helt tilfreds. Jeg ville gerne lave logoet simpelt, men samtidig skulle det være noget man kunne genkende, hvis man så det igen. Jeg begyndte derfor at lege med domænets navn, så jeg fik det inkorpereret på siden. Jeg begyndte igen at lege med forskellige farver og former, men synes ikke de passede på siderne, når jeg satte logoet ind.Jeg kom frem til det sidste logo, med en simpel tekst og et lille ikon af en sky og et globe-ikon.</p>
+        <h2>Farver</h2>
+        <p>I forhold til farve, har jeg valgt kun at bruge de tre som ses til højre. Den rødlige farve er brugt på logoet ellers er det sort og hvid alle andre steder. Dette har jeg valgt, for gøre det så simpelt så muligt og fordi jeg synes, at mange forskellige farver kan være med til at forstyrre øjet.</p>
+        <h2>Kodning</h2>
+        <p>Klik på ikonet til højre for at udforske min kode på Github.</p>
+        <h2>Udfordringer</h2>
+        <p>Jeg kom ret godt for start med opgaven, da jeg hurtigt havde en ide om, hvordan hele opsætningen af min portfolio skulle være. Jeg eksperimenterede meget med java script den første uge, og måtte erkende, at jeg blev nødt til at begrænse mig, for at nå at blive færdig. En udfordring for mig har helt klart været videosekvensen, da jeg synes det har været rigtig svært at finde på, hvordan den skulle udformes og hvad den skulle handle om. Jeg er ikke tilfreds med videoen, og synes ikke den passer til stemningen i mit portfolio. </p>
+        <h2>Reflektion</h2>
+        <p>Efter hvert flow har jeg lavet en reflektion over projektet, da det er vigtigt at refkletere over hvad man har lært.</p>
+        <h3>Hvad har jeg lært under forløbet?</h3>
+        <h3>Hvordan hænger det sammen med mit forhåndskendskab til emnet og denne opgavetype?</h3>
+        <h3>Hvad forventede jeg at lære?</h3>
+        <h3>Hvad har jeg mere brug for at lære?</h3>
+        <h3>Hvad vil jeg foretage mig for at komme til at lære dette?</h3>
+      </div>
+      <div class="container">
+        <img src="img/pbs2.png" width="65%" alt="PBS">
+        <img src="img/wbs.jpg" width="100%"alt="WBS">
+        <img src="img/wireframes.png" width="50%" height="300px;" alt="Wireframes">
+        <div class="overlay1">
+          <a href="https://xd.adobe.com/view/c66d07a0-6dc6-4a2e-acac-752331a882f4-933e/" target="_blank">
+            <div class="text">
+              Udforsk wireframes
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="gantt">
+
+      <img src="img/gantt.png" width="100%" height="300px" alt="Gantt diagram">
+      <div class="overlay2">
+        <a href="https://docs.google.com/spreadsheets/d/123E8nhTVIxtqDcpPDANrIBI2eqP1uM1L1VoOHA-jHG4/edit?usp=sharing" target="_blank">
+          <div class="text">
+            Udforsk Gantt diagram
+          </div>
+        </a>
+      </div>
+    </div>
+
+
+
+      <div class="font">
+    <img src="img/font.png" width="100%"alt="Skrifttype">
+    <img src="img/logos.png" width="100%" alt="">
+    <img src="img/farve.png" alt="">
+    <img src="img/github.png" height="300px;" alt="">
+      </div>
+
+
+    <footer>
+      <p>©2020 | Izabel Bathò | ™Highground by Iza</p>
+    </footer>
+
+</body>
+
+</html>

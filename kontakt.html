@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Highground by Iza</title>
+  <link rel="shortcut icon" href="img/ikon.jpg"/>
+    <link rel="stylesheet" href="css/style.css">
+    <style media="screen">
+    .logo{
+      float: right;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="index.html">HJEM</a>
+        <a href="om.html">OM</a>
+        <a href="projekter.html">PROJEKTER</a>
+        <a href="cv.html">CV</a>
+        <a href="kontakt.html">KONTAKT</a>
+      </div>
+    </div>
+    <div class="logo">
+      <a href="index.html">
+    <img src="img/logo2.jpg" alt="logo" height="100px">
+    </a>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+    <script>
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+    </script>
+    <div class="container">
+      <form action="/action_page.php">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">Navn</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="Dit navn..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">E-mail</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="mail" name="mail" placeholder="Eksempel@mail.com">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Emne</label>
+          </div>
+          <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="Skriv her.." style="height:200px"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Send">
+        </div>
+      </form>
+    </div>
+    <footer><p>©2020 | Izabel Bathò | ™Highground by Iza</p></footer>
+
+  </body>
+</html>

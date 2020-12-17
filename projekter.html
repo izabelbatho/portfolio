@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+  <title>Highground by Iza</title>
+<link rel="shortcut icon" href="img/ikon.jpg"/>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style media="screen">
+
+h1{
+  text-align: center;
+  margin-left: 15%;
+}
+
+* {
+box-sizing: border-box;
+}
+
+.container {
+float: left;
+width: 50%;
+padding: 5px;
+}
+
+.row::after {
+content: "";
+clear: both;
+display: table;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.container:hover .overlay1 {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container {
+  border: 2px solid;
+  margin-bottom: 6%;
+  margin-left: 3%;
+  margin-right: 3%;
+  width: 44%;
+}
+.logo{
+  float: right;
+}
+.flow5{
+  width: 75%;
+  border: solid;
+  margin:auto;
+}
+.overlay2 {
+  position: absolute;
+  /*top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;*/
+  height: 79%;
+  width: 72.5%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-top: -39.5%;
+}
+
+.flow5:hover .overlay2 {
+  opacity: 1;
+}
+footer {
+  display: flex;
+  width: 100%;
+  background-color: ;
+  height: 110px;
+  border-top: 1px solid;
+  margin-top: 2%;
+}
+</style>
+</head>
+<body>
+
+
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="index.html">HJEM</a>
+      <a href="om.html">OM</a>
+      <a href="projekter.html">PROJEKTER</a>
+      <a href="cv.html">CV</a>
+      <a href="kontakt.html">KONTAKT</a>
+    </div>
+  </div>
+  <div class="logo">
+    <a href="index.html">
+  <img src="img/logo2.jpg" alt="logo" height="100px">
+  </a>
+  </div>
+
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+  <script>
+  function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+  }
+
+  function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+  }
+  </script>
+
+  <h1>1. Semester flows</h1>
+<div class="row">
+  <div class="container">
+    <img src="img/portfolio.jpg" alt="portfolio" width="100%" height="300px">
+    <div class="overlay1">
+      <a href="xd.html"> <div class="text">Byg din drømme portfolio</div></a>
+          </div>
+            </div>
+
+
+<div class="container">
+  <img src="img/portfolio2.jpg" alt="portfolio" width="100%" height="300px">
+  <div class="overlay1">
+<a href="portfolio.html"> <div class="text">Byg din portfolio</div></a>
+  </div>
+</div>
+</div>
+
+
+
+<div class="row">
+<div class="container">
+  <img src="img/app.jpg" alt="zara" width="100%" height="300px">
+  <div class="overlay1">
+    <a href="app.html"> <div class="text">Byg en app</div></a>
+  </div>
+  </div>
+
+
+
+<div class="container">
+  <img src="img/kampagne.jpg" alt="kampagne" width="100%" height=300px>
+  <div class="overlay1">
+
+    <a href="kampagne.html"><div class="text">Verdensmålskampagne</div></a>
+  </div>
+</div>
+</div>
+
+
+<div class="flow5">
+
+  <img src="img/logo2.jpg" alt="logo">
+
+<div class="overlay2">
+    <a href="flow5.html"><div class="text">Flow 5</div></a>
+  </div>
+</div>
+<footer><p>©2020 | Izabel Bathò | ™Highground by Iza</p></footer>
+
+</body>
+
+</html>

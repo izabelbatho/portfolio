@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Highground by Iza</title>
+  <link rel="shortcut icon" href="img/ikon.jpg" />
+  <link rel="stylesheet" href="css/style.css">
+  <style media="screen">
+    .logo {
+      float: right;
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .container {
+      float: left;
+      width: 50%;
+      padding: 5px;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .container {
+      position: relative;
+      width: 50%;
+    }
+
+    .img {
+      border: solid 2px;
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .overlay1{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 40%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .container:hover .overlay1{
+      opacity: 1;
+    }
+
+    .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .download {
+      margin-top: 5%;
+      margin-left: 20%;
+    }
+
+    .skrift {
+      margin-top: 40%;
+    }
+
+    .back {
+      margin-top: 2%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="index.html">HJEM</a>
+      <a href="om.html">OM</a>
+      <a href="projekter.html">PROJEKTER</a>
+      <a href="cv.html">CV</a>
+      <a href="kontakt.html">KONTAKT</a>
+    </div>
+  </div>
+  <div class="logo">
+    <a href="index.html">
+      <img src="img/logo2.jpg" alt="logo" height="100px">
+    </a>
+  </div>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+  </script>
+  <div class="back">
+    <a href="projekter.html">
+      <img src="img/back.jpg" height="30px" alt="tilbage knap">
+    </a>
+  </div>
+  <h1>Byg en app</h1>
+  <div class="row">
+    <div class="container">
+      <h2>Opgavebeskrivelse</h2>
+      <p>Flow 3 bestod af at lave en prototype app. Det var et krav, at appen skulle have et sammenspil med ét eller flere af FN's verdensmål. Appen skulle laves i Adobe XD og der skulle produceres et grafisk element i Adobe Illustrator. I denne
+        opgave blev vi delt ind i grupper, som blev tildelt os af undervisere. Klik på billedet til højre for at udforske appen.</p>
+      <h2>Remake</h2>
+      <p>Mit remake af dette flow, tager udgangspunkt i feedback fra lærerteamet samt brugertest. Der er minimale ændringer, da de der tog brugertesten ikke havde nogle indvendinger som sådan. Feedback fra lærerteamet var også begrænset, vi fik
+        kritik for at have logo på hver underside, så derfor har jeg fjernet dette, samt sætte logoet på hovedsiderne i højre hjørne, så man kan se logoet. Klik <a href="https://xd.adobe.com/view/dcd8cfb7-e931-4d87-b053-790ebd0d6efc-898b/" target="_blank">her</a> for at udforske remake.</p>
+      <h2>Reflektion</h2>
+      <p>Efter hvert flow har jeg lavet en reflektion over projektet, da det er vigtigt at refkletere over hvad man har lært.</p>
+      <h3>Hvad har jeg lært under forløbet?</h3>
+      <p>I dette flow beskæftigede vi os med projektledelse. Vi fik indblik i PBS, WBS og OBS, samt struktur og fordeling af arbejdsopgaver. Jeg er blevet bedre i Adobe XD efter dette flow.</p>
+      <h3>Hvordan hænger det sammen med mit forhåndskendskab til emnet og denne opgavetype?</h3>
+      <p>Vi kendte til Adobe XD fra tidligere Flow 1.</p>
+      <h3>Hvad forventede jeg at lære?</h3>
+      <p>Jeg forventede at blive bedre til Adobe XD og strukturen i en app.</p>
+      <h3>Hvad har jeg mere brug for at lære?</h3>
+      <p>Man kan altid lære et program bedre at kende. Udover det, synes jeg generelt det var en sjov opgave at lege med app-format, og ser helt sikkert frem til at gøre dette igen senere på uddannelsen.</p>
+      <h3>Hvad vil jeg foretage mig for at komme til at lære dette?</h3>
+      <p>I skrivende stund, ikke noget. Jeg tænker det bliver relevant hvis det kommer i undervisningen senere på uddannelsen.</p>
+    </div>
+
+
+    <div class="container">
+      <div class="img">
+        <img src="img/app.jpg" alt="app" height="300px" width="100%">
+        <div class="overlay1">
+          <a href="https://xd.adobe.com/view/722545e3-fb26-4574-9b45-2892561715cd-2776/" target="_blank">
+            <div class="text">
+              <p>Byg en app</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <a href="file/flow3.pdf" download="ReDesign" target="_blank">
+        <div class="download">
+          <img src="img/down.jpg" alt="download">
+        </div>
+      </a>
+      <h2>Klik på ikonet for at downloade rapporten på mit portfolio.</h2>    </div>
+
+  </div>
+  <footer>
+    <p>©2020 | Izabel Bathò | ™Highground by Iza</p>
+  </footer>
+
+</body>
+
+</html>
